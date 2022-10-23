@@ -1,0 +1,30 @@
+/***************************************
+Guillermo Pulido Fernández - UO282716
+Descripción de los estilos
+***************************************/
+
+body{
+    display: grid;
+    grid-template-areas: 
+    'header header header header header'
+    'main main main main aside'
+    'main main main main aside'
+    'main main main main aside'
+    'footer footer footer footer footer';
+    gap: 1em;
+}
+
+header, nav{
+    display: flex;
+    justify-content: center;
+    padding: 0.1em;
+    align-items: center;
+    column-gap: 1em;
+    flex-wrap: wrap;
+  }
+
+  aside, footer, section {
+    display: flexbox;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
