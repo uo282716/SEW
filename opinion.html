@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    
+
+    <!--Definición de la ventana gráfica-->
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+
+    <!--Metadatos de los documentos HTML5-->
+    <meta name ="author" content ="Guillermo Pulido Fernández" />
+    <meta name ="description" content ="Página en donde el usuario podrá rellenar una encuesta sobre nuestra página web" />
+    <meta name ="keywords" content ="Nombre, Género, Fecha, opinión" />
+
+    <title>Ruby - Opinión</title>
+
+    <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+</head>
+
+<body>
+    <header>
+        <section>
+            <img src="multimedia/ruby.png" alt="Logo de Ruby" />
+
+            <h1>Lenguaje Ruby</h1>
+        </section>
+
+        <nav>
+            <a href="index.html">Introducción</a>
+            <a href="caracteristicas.html">Características</a>
+            <a href="versiones.html">Versiones</a>
+            <a href="opinion.html">Opinión</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Opinión</h2>
+        <p>A continuación ponemos a su disposición una serie de campos a rellenar. Para nosotros es muy importante su opinión como usuario de nuestra página Web, y esta información solo será utilizada con fines de mejorar nuestro producto. ¡Muchas gracias de antemano!</p>
+
+        <form name="datos">
+            <p><label for="name">Nombre:</label> <input id="name" type="text"></p>
+            <p><label for="surname">Apellidos:</label><input id="surname" type="text"></p>
+
+            <fieldset>
+                <legend>Género: </legend>
+                <p><label for="masc">Masculino</label><input id="masc" type="checkbox"></p>
+                <p><label for="fem">Femenino</label><input id="fem" type="checkbox"></p>
+                <p><label for="pnb">Persona no binaria</label><input id="pnb" type="checkbox"></p>
+                <p><label for="nsnc">Prefiero no decirlo</label><input id="nsnc" type="checkbox"></p>
+            </fieldset>
+
+            <p><label for="fecha">Fecha de Nacimiento:</label><input id="fecha" type="date"></p>
+            <p><label for="email">Email:</label><input id="email" type="email"></p>
+            <p><label for="opinion">Danos tu opinión:</label><textarea id="opinion" maxlength =1000></textarea></p>
+            <p><input type="submit" value="Enviar"></p>
+
+        </form>
+    </main>
+
+    <!-- la carpeta de recursos gráficos "images" debe estar en el misma carpeta del archivo -->
+    <!-- anadir la sección footer dentro del body despues del párrafo -->
+    <footer>
+        <P>Página realizada por: </P>
+        <address>
+            <p>Guillermo Pulido Fernández</p>
+            <p>Teléfono: 1234</p>
+            <p>Email: uo282716@uniovi.es</p>
+        </address>
+        <section>
+            <img src="multimedia/HTML5.png" alt=" HTML5 Válido!" />
+            <img src="multimedia/CSS3.png"  alt="CSS Válido!"  />
+        </section>
+    </footer>
+</body>
+</html>
