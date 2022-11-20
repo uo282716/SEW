@@ -21,15 +21,19 @@ form{
     height: 25em;
 }
 
-/*Especificidad: 001*/
+/*Especificidad: 011*/
 input[type = "button"]{
     background-color: #2baac8;
     color: #050404;   
 }
 
-/*Especificidad: 001*/
+/*Especificidad: 011*/
 input[type=text] {
     grid-column: span 5;
-    margin-bottom: 0.75em;
-    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+}
+
+/*Especificidad: 001*/
+label{
+    grid-column: span 5;
 }
