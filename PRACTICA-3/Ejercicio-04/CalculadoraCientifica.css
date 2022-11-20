@@ -15,10 +15,10 @@ form{
     background-color: #e1a2df;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 1em;
+    grid-gap: 1.5em;
     padding: 1em;
-    width: 22em;
-    height: 25em;
+    width: 27em;
+    height: 30em;
 }
 
 /*Especificidad: 011*/
@@ -36,4 +36,5 @@ input[type=text] {
 /*Especificidad: 001*/
 label{
     grid-column: span 5;
+    font-size: medium;
 }
