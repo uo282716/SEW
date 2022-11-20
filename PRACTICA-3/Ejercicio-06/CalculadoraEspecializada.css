@@ -1,4 +1,8 @@
-
+/***************************************
+Guillermo Pulido Fernández - UO282716
+Descripción de los estilos
+***************************************/
+/*Especificidad: 001*/
 body{
     align-items: center;
     margin-right: 40em;
@@ -6,34 +10,42 @@ body{
     margin-top: 5em;
 }
 
+/*Especificidad: 001*/
 form{
     background-color: #e1a2df;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 1em;
     padding: 1em;
-    width: 22em;
-    height: 30em;
+    width: 27em;
+    height: 35em;
 }
 
+/*Especificidad: 011*/
 input[type = "button"]{
     background-color: #2baac8;
     color: #050404;   
 }
 
+/*Especificidad: 011*/
 input[value = "ENTER"]{
     grid-column: span 3;
 }
 
+/*Especificidad: 011*/
 input[type=text] {
     grid-column: span 5;
     margin-bottom: 0.75em;
-    margin-top: 0.8em;
 }
 
+/*Especificidad: 001*/
 textarea {
     resize: none;
     grid-column: span 5;
     margin-bottom: 0.75em;
-    margin-top: 0.8em;
+}
+
+/*Especificidad: 001*/
+label{
+    grid-column: span 5;
 }
