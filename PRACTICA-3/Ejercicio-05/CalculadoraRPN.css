@@ -27,13 +27,15 @@ input[value = "ENTER"]{
 
 input[type=text] {
     grid-column: span 4;
-    margin-bottom: 0.75em;
-    margin-top: 0.8em;
+    margin-top: 0.75em;
 }
 
 textarea {
     resize: none;
     grid-column: span 4;
-    margin-bottom: 0.75em;
-    margin-top: 0.8em;
+    margin-top: 0.75em;
+}
+
+label{
+    grid-column: span 4;
 }
