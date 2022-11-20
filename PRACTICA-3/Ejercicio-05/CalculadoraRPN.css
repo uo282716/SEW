@@ -1,0 +1,39 @@
+
+body{
+    align-items: center;
+    margin-right: 40em;
+    margin-left: 30em;
+    margin-top: 5em;
+}
+
+form{
+    background-color: #e1a2df;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+    padding: 1em;
+    width: 22em;
+    height: 30em;
+}
+
+input[type = "button"]{
+    background-color: #2baac8;
+    color: #050404;   
+}
+
+input[value = "ENTER"]{
+    grid-column: span 4;
+}
+
+input[type=text] {
+    grid-column: span 4;
+    margin-bottom: 0.75em;
+    margin-top: 0.8em;
+}
+
+textarea {
+    resize: none;
+    grid-column: span 4;
+    margin-bottom: 0.75em;
+    margin-top: 0.8em;
+}

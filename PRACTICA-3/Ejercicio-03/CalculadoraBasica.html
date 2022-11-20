@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    
+
+    <!--Definición de la ventana gráfica-->
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+
+    <!--Metadatos de los documentos HTML5-->
+    <meta name ="author" content ="Guillermo Pulido Fernández" />
+    <meta name ="description" content ="Calculadora Milán básica" />
+    <meta name ="keywords" content ="1, +, -" />
+
+    <title>Calculadora Básica</title>
+
+    <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <link rel="stylesheet" type="text/css" href="CalculadoraBasica.css" />
+    <script src="CalculadoraBasica.js"></script>
+</head>
+
+<body>
+    <form>
+        <input type="text" readonly value="0">
+        <input type="button" value="ON/C" onClick = "calculator.onc()">
+        <input type="button" value="CE" onClick = "calculator.ce()">
+        <input type="button" value="+/-" onClick = "calculator.changeSign()">
+        <input type="button" value="SQR" onClick = "calculator.sqr()">
+        <input type="button" value="%" onClick = "calculator.percentage()">
+        <input type="button" value="7" onClick = "calculator.digit('7')">
+        <input type="button" value="8" onClick = "calculator.digit('8')">
+        <input type="button" value="9" onClick = "calculator.digit('9')">
+        <input type="button" value="x" onClick = "calculator.mul()">
+        <input type="button" value="/" onClick = "calculator.div()">
+        <input type="button" value="4" onClick = "calculator.digit('4')">
+        <input type="button" value="5" onClick = "calculator.digit('5')">
+        <input type="button" value="6" onClick = "calculator.digit('6')">
+        <input type="button" value="-" onClick = "calculator.minus()">
+        <input type="button" value="MRC" onClick = "calculator.mrc()">
+        <input type="button" value="1" onClick = "calculator.digit('1')">
+        <input type="button" value="2" onClick = "calculator.digit('2')">
+        <input type="button" value="3" onClick = "calculator.digit('3')">
+        <input type="button" value="+" onClick = "calculator.plus()">
+        <input type="button" value="M-" onClick = "calculator.mMinus()">
+        <input type="button" value="0" onClick = "calculator.digit('0')">
+        <input type="button" value="." onClick = "calculator.dot()">
+        <input type="button" value="=" onClick = "calculator.equal()">
+        <input type="button" value="M+" onClick = "calculator.mPlus()">
+    </form>
+    
+
+</body>
+</html>

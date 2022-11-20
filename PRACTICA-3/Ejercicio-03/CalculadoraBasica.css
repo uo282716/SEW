@@ -1,0 +1,33 @@
+
+body{
+    align-items: center;
+    margin-right: 40em;
+    margin-left: 30em;
+    margin-top: 5em;
+}
+
+form{
+    background-color: #e1a2df;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+    padding: 1em;
+    width: 22em;
+    height: 25em;
+}
+
+input[type = "button"]{
+    background-color: #2baac8;
+    color: #050404;   
+}
+
+input[type=text] {
+    grid-column: span 5;
+    margin-bottom: 0.75em;
+    margin-top: 0.8em;
+}
+  
+input[type=button][value="+"] {
+    grid-column: 4;
+    grid-row: span 2;
+}

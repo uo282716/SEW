@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    
+
+    <!--Definición de la ventana gráfica-->
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+
+    <!--Metadatos de los documentos HTML5-->
+    <meta name ="author" content ="Guillermo Pulido Fernández" />
+    <meta name ="description" content ="Calculadora Cientifica" />
+    <meta name ="keywords" content ="1, +, -" />
+
+    <title>Calculadora Científica</title>
+
+    <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <link rel="stylesheet" type="text/css" href="CalculadoraCientifica.css" />
+    <script src="CalculadoraCientifica.js"></script>
+</head>
+
+<body>
+    <form>
+        <input type="text" readonly id="screen">
+        <input type="button" value="x^2" onClick = "calculator.square()">
+        <input type="button" value="x^y" onClick = "calculator.pot()">
+        <input type="button" value="sin" onClick = "calculator.sin()">
+        <input type="button" value="cos" onClick = "calculator.cos()">
+        <input type="button" value="tan" onClick = "calculator.tan()">
+        <input type="button" value="SQR" onClick = "calculator.sqr()">
+        <input type="button" value="10^x" onClick = "calculator.exp10()">
+        <input type="button" value="log" onClick = "calculator.log()">
+        <input type="button" value="Exp" onClick = "calculator.exp()">
+        <input type="button" value="Mod" onClick = "calculator.mod()">
+        <input type="button" value="↑" onClick = "calculator.shiftear()">
+        <input type="button" value="CE" onClick = "calculator.ce()">
+        <input type="button" value="C" onClick = "calculator.onc()">
+        <input type="button" value="←" onClick = "calculator.back()">
+        <input type="button" value="/" onClick = "calculator.div()">
+        <input type="button" value="π" onClick = "calculator.pi()">
+        <input type="button" value="7" onClick = "calculator.digit('7')">
+        <input type="button" value="8" onClick = "calculator.digit('8')">
+        <input type="button" value="9" onClick = "calculator.digit('9')">
+        <input type="button" value="X" onClick = "calculator.mul()">
+        <input type="button" value="n!" onClick = "calculator.fact()">
+        <input type="button" value="4" onClick = "calculator.digit('4')">
+        <input type="button" value="5" onClick = "calculator.digit('5')">
+        <input type="button" value="6" onClick = "calculator.digit('6')">
+        <input type="button" value="-" onClick = "calculator.minus()">
+        <input type="button" value="±" onClick = "calculator.changeSign()">
+        <input type="button" value="1" onClick = "calculator.digit('1')">
+        <input type="button" value="2" onClick = "calculator.digit('2')">
+        <input type="button" value="3" onClick = "calculator.digit('3')">
+        <input type="button" value="+" onClick = "calculator.plus()">
+        <input type="button" value="(" onClick = "calculator.open()">
+        <input type="button" value=")" onClick = "calculator.close()">
+        <input type="button" value="0" onClick = "calculator.digit('0')">
+        <input type="button" value="." onClick = "calculator.dot()">
+        <input type="button" value="=" onClick = "calculator.equal()">
+    </form>
+    
+
+</body>
+</html>
