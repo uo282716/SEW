@@ -19,21 +19,21 @@ form{
     padding: 1em;
     width: 27em;
     height: 30em;
-    font-size: large;
+    font-size: 1.5em;
 }
 
 /*Especificidad: 011*/
 input[type = "button"]{
     background-color: #2baac8;
     color: #050404;
-    font-size: large;
+    font-size: 1.5em;
 }
 
 /*Especificidad: 011*/
 input[type=text] {
     grid-column: span 5;
     margin-bottom: 0.75em;
-    font-size: large;
+    font-size: 1.5em;
 }
 
 /*Especificidad: 021*/
@@ -45,5 +45,5 @@ input[type=button][value="+"] {
 /*Especificidad: 001*/
 label{
     grid-column: span 5;
-    font-size: large;
+    font-size: 1.5em;
 }
