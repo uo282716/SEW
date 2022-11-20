@@ -19,6 +19,7 @@ form{
     padding: 1em;
     width: 27em;
     height: 30em;
+    font-size: large;
 }
 
 /*Especificidad: 011*/
@@ -42,5 +43,5 @@ input[type=button][value="+"] {
 /*Especificidad: 001*/
 label{
     grid-column: span 5;
-    font-size: medium;
+    font-size: large;
 }

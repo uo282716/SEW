@@ -36,5 +36,5 @@ input[type=text] {
 /*Especificidad: 001*/
 label{
     grid-column: span 5;
-    font-size: medium;
+    font-size: large;
 }

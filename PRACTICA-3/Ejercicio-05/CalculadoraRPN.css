@@ -48,5 +48,5 @@ textarea {
 /*Especificidad: 001*/
 label{
     grid-column: span 4;
-    font-size: medium;
+    font-size: large;
 }
