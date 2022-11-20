@@ -19,23 +19,27 @@ form{
     padding: 1em;
     width: 27em;
     height: 30em;
+    font-size: 1.5em;
 }
 
 /*Especificidad: 001*/
 input[type = "button"]{
     background-color: #2baac8;
     color: #050404;   
+    font-size: 1.5em;
 }
 
 /*Especificidad: 001*/
 input[value = "ENTER"]{
     grid-column: span 4;
+    font-size: 1.5em;
 }
 
 /*Especificidad: 001*/
 input[type=text] {
     grid-column: span 4;
     margin-top: 0.75em;
+    font-size: 1.5em;
 }
 
 /*Especificidad: 001*/
@@ -43,10 +47,11 @@ textarea {
     resize: none;
     grid-column: span 4;
     margin-top: 0.75em;
+    font-size: 1.5em;
 }
 
 /*Especificidad: 001*/
 label{
     grid-column: span 4;
-    font-size: large;
+    font-size: 1.5em;
 }
