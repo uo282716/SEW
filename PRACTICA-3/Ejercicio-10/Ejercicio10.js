@@ -11,7 +11,7 @@ class Precios {
 
 
         this.url = "https://apidatos.ree.es/en/datos/mercados/precios-mercados-tiempo-real?start_date=" + this.startDate + "&end_date=" + this.endDate + "&time_trunc=hour"
-        this.correcto = "¡Todo correcto! JSON recibido de <a href='http://openweathermap.org'>OpenWeatherMap</a>"
+        this.correcto = "¡Todo correcto! JSON recibido de <a href='https://openweathermap.org'>OpenWeatherMap</a>"
     }
     cargarDatos(){
         let tiempo = Date.now();
@@ -57,7 +57,7 @@ class Precios {
                     $("pre:last").html(string);
                 },
             error:function(){
-                $("h3").html("¡Tenemos problemas! No puedo obtener JSON de <a href='http://openweathermap.org'>OpenWeatherMap</a>"); 
+                $("h3").html("¡Tenemos problemas! No puedo obtener JSON de <a href='https://openweathermap.org'>OpenWeatherMap</a>"); 
                 $("pre").remove();
                 $("p").remove();
                 }

@@ -69,7 +69,7 @@ class Mapa {
         $("article").after(stringDatos); 
       },
       error:function(){
-          $("h2").html("¡Tenemos problemas! No puedo obtener XML de <a href='http://openweathermap.org'>OpenWeatherMap</a>"); 
+          $("h2").html("¡Tenemos problemas! No puedo obtener XML de <a href='https://openweathermap.org'>OpenWeatherMap</a>"); 
       }     
     });
   }

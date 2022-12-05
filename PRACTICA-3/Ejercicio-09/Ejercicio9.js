@@ -6,8 +6,8 @@ class Meteo {
         this.tipo = "&mode=xml";
         this.unidades = "&units=metric";
         this.idioma = "&lang=es";
-        this.url = "http://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad + this.tipo + this.unidades + this.idioma + "&APPID=" + this.apikey;
-        this.correcto = "¡Todo correcto! XML recibido de <a href='http://openweathermap.org/'>OpenWeatherMap</a>"
+        this.url = "https://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad + this.tipo + this.unidades + this.idioma + "&APPID=" + this.apikey;
+        this.correcto = "¡Todo correcto! XML recibido de <a href='https://openweathermap.org/'>OpenWeatherMap</a>"
     }
     cargarDatos(){
         $.ajax({
@@ -86,7 +86,7 @@ class Meteo {
                     $("h3").after(stringDatos);                  
                 },
             error:function(){
-                $("h3").html("¡Tenemos problemas! No puedo obtener XML de <a href='http://openweathermap.org'>OpenWeatherMap</a>"); 
+                $("h3").html("¡Tenemos problemas! No puedo obtener XML de <a href='https://openweathermap.org'>OpenWeatherMap</a>"); 
                 $("h4").remove();
                 $("h5").remove();
                 $("p").remove();
@@ -104,10 +104,10 @@ class Meteo {
     verJSON(ciudad){
         this.delete();
         this.ciudad = ciudad;
-        this.url = "http://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad + "," + this.codigoPais + this.unidades + this.idioma + "&APPID=" + this.apikey;
+        this.url = "https://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad + "," + this.codigoPais + this.unidades + this.idioma + "&APPID=" + this.apikey;
 
               //Muestra el archivo JSON recibido
-              this.crearElemento("h2","Datos de " + ciudad + ". Obtenidos en (<a href='http://openweathermap.org'>OpenWeatherMap</a>)","footer"); 
+              this.crearElemento("h2","Datos de " + ciudad + ". Obtenidos en (<a href='https://openweathermap.org'>OpenWeatherMap</a>)","footer"); 
               this.crearElemento("h3","Datos","footer"); // Crea un elemento con DOM 
               this.cargarDatos();
               $("button").attr("disabled","disabled");
@@ -116,11 +116,11 @@ class Meteo {
     verXML(ciudad){
         this.delete();
         this.ciudad = ciudad;
-        this.url = "http://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad + this.tipo + this.unidades + this.idioma + "&APPID=" + this.apikey;
+        this.url = "https://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad + this.tipo + this.unidades + this.idioma + "&APPID=" + this.apikey;
 
         //Muestra el archivo JSON recibido
         this.crearElemento("h3","Datos","section:last"); // Crea un elemento con DOM 
-        this.crearElemento("h2","Datos de " + ciudad + ". Obtenidos en (<a href='http://openweathermap.org'>OpenWeatherMap</a>)","section:last"); 
+        this.crearElemento("h2","Datos de " + ciudad + ". Obtenidos en (<a href='https://openweathermap.org'>OpenWeatherMap</a>)","section:last"); 
         this.cargarDatos();
         $("button").attr("disabled","disabled");
     }

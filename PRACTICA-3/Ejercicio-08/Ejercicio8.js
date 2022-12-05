@@ -6,8 +6,8 @@ class Meteo {
         this.codigoPais = "ES";
         this.unidades = "&units=metric";
         this.idioma = "&lang=es";
-        this.url = "http://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad + "," + this.codigoPais + this.unidades + this.idioma + "&APPID=" + this.apikey;
-        this.correcto = "¡Todo correcto! JSON recibido de <a href='http://openweathermap.org'>OpenWeatherMap</a>"
+        this.url = "https://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad + "," + this.codigoPais + this.unidades + this.idioma + "&APPID=" + this.apikey;
+        this.correcto = "¡Todo correcto! JSON recibido de <a href='https://openweathermap.org'>OpenWeatherMap</a>"
     }
     cargarDatos(){
         $.ajax({
@@ -40,7 +40,7 @@ class Meteo {
                     $("h3").after(stringDatos);
                 },
             error:function(){
-                $("h3").html("¡Tenemos problemas! No puedo obtener JSON de <a href='http://openweathermap.org'>OpenWeatherMap</a>"); 
+                $("h3").html("¡Tenemos problemas! No puedo obtener JSON de <a href='https://openweathermap.org'>OpenWeatherMap</a>"); 
                 $("p").remove();
                 }
         });
@@ -56,13 +56,13 @@ class Meteo {
     verJSON(ciudad){
         this.delete();
         this.ciudad = ciudad;
-        this.url = "http://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad + "," + this.codigoPais + this.unidades + this.idioma + "&APPID=" + this.apikey;
+        this.url = "https://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad + "," + this.codigoPais + this.unidades + this.idioma + "&APPID=" + this.apikey;
 
               //Muestra el archivo JSON recibido
               this.cargarDatos();
               //this.crearElemento("p","","section:last"); // Crea un elemento con DOM para los datos obtenidos con JSON
               this.crearElemento("h3","Datos","section:last"); // Crea un elemento con DOM 
-              this.crearElemento("h2","Datos de " + ciudad + ". Obtenidos en (<a href='http://openweathermap.org'>OpenWeatherMap</a>)","section:last"); 
+              this.crearElemento("h2","Datos de " + ciudad + ". Obtenidos en (<a href='https://openweathermap.org'>OpenWeatherMap</a>)","section:last"); 
               $("button").attr("disabled","disabled");
     }
 
