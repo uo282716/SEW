@@ -64,3 +64,8 @@ footer section h2{
     font-size: 0.75em;
     margin-right: 1vw;
 }
+
+/*Especificidad: 001*/
+code{
+    white-space: pre-wrap;
+}
