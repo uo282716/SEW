@@ -8,13 +8,12 @@ class Fichero {
       //Solamente toma un archivo
       //var archivo = document.getElementById("archivoTexto").files[0];
       var archivo = files[0];
-      var nombre = document.querySelector("p[name='nombreArchivo']");
-      var tamaño = document.querySelector("p[name='tamañoArchivo']");
-      var tipo = document.querySelector("p[name='tipoArchivo']");
-      var ultima = document.querySelector("p[name='ultimaModificacion']");
-      var contenido = document.querySelector("p[name='contenidoArchivo']");
-      var areaVisualizacion = document.querySelector("pre[name='areaTexto']");
-      var errorArchivo = document.querySelector("p[name='errorLectura']");
+      var nombre = document.querySelector("p[title='nombreArchivo']");
+      var tamaño = document.querySelector("p[title='tamañoArchivo']");
+      var tipo = document.querySelector("p[title='tipoArchivo']");
+      var ultima = document.querySelector("p[title='ultimaModificacion']");
+      var contenido = document.querySelector("p[title='contenidoArchivo']");
+      var errorArchivo = document.querySelector("p[title='errorLectura']");
       nombre.innerText = "Nombre del archivo: " + archivo.name;
       tamaño.innerText = "Tamaño del archivo: " + archivo.size + " bytes"; 
       tipo.innerText = "Tipo del archivo: " + archivo.type;
@@ -33,7 +32,7 @@ class Fichero {
             //Esta propiedad solamente es válida cuando se termina la operación de lectura
             let text = lector.result.replace("<br>", "\n");
 
-            areaVisualizacion.innerText = text;
+            $("code").text(text);
             }      
           lector.readAsText(archivo);
           }

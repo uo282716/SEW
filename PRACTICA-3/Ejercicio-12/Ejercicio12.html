@@ -30,17 +30,19 @@
     
     <main>
       <h2>Visualizar el documento</h2>
-      <p>Seleccione un archivo de texto: </p>
+      <label for="archivoTexto">Seleccione un archivo de texto: </label>
     
       <p><input type="file" id="archivoTexto" onchange="fichero.leerArchivoTexto(this.files)"></p>
       
-      <p name="nombreArchivo"></p>
-      <p name="tamañoArchivo"></p>
-      <p name="tipoArchivo"></p>
-      <p name="ultimaModificacion"></p>
-      <p name="contenidoArchivo"></p>
-      <pre name="areaTexto"></pre>
-      <p name="errorLectura"></p>
+      <p title="nombreArchivo"></p>
+      <p title="tamañoArchivo"></p>
+      <p title="tipoArchivo"></p>
+      <p title="ultimaModificacion"></p>
+      <p title="contenidoArchivo"></p>
+      <pre title="areaTexto">
+        <code></code>
+      </pre>
+      <p title="errorLectura"></p>
     </main>
     
 

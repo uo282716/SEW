@@ -9,7 +9,7 @@ class Mapa {
         this.map = new google.maps.Map(document.querySelector('article'),{zoom: 8,center:pos});
     }
 
-    cargarGeoJSON(files){
+    cargarKML(files){
       this.initMap();
       let archivo = files[0];
 
